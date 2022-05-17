@@ -16,5 +16,7 @@ WORKDIR /app
 
 COPY --from=builder /build/main main
 
+EXPOSE 8080
+
 # Run the executable
 CMD ["./main"]
